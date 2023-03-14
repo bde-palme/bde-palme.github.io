@@ -1,0 +1,23 @@
+insta:
+  id: 'bde_palme'
+  href: 'https://instagram.com/'
+  title: 'Instagram'
+  fa-icon: 'instagram'
+
+mailbureau:
+  id: 'bdepalme@gmail.com'
+  href: 'mailto:'
+  title: 'Bureau'
+  fa-icon: 'envelope'
+
+mailsecr:
+  id: 'palme.secretariat@gmail.com'
+  href: 'mailto:'
+  title: 'Secrétariat'
+  fa-icon: 'fa-envelope-square'
+
+mailtres:
+  id: 'palme.tresorerie@gmail.com'
+  href: 'mailto:'
+  title: 'Trésorerie'
+  fa-icon: 'fa-envelope-square'
