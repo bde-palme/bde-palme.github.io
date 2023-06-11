@@ -11,6 +11,8 @@ permalink: /liens/
 
 ### HelloAsso
 
+Nous avons un [HelloAsso](https://www.helloasso.com/associations/palme) pour nos différents événements.
+
 ### Mails
 
  - Bureau : [bdepalme@gmail.com](mailto:bdepalme@gmail.com)
