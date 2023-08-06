@@ -16,8 +16,6 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-gems:
   - jekyll_social_icons
 
 # Theme-specific settings
