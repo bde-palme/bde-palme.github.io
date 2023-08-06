@@ -1,0 +1,16 @@
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+.site-header {
+  background-color: #075f73;
+  border-top: 5px solid #075f73;
+}
+
+.site-title, .site-title:visited {
+  color: #f7f7f7;
+}
+
+.site-nav {
+  .page-link {
+    color: #f7f7f7;
+  }
+}
