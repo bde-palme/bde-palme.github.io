@@ -2,6 +2,7 @@
 layout: page
 title: Le foyer
 permalink: /le-foyer/
+exclude: false
 ---
 
 Nous avons un superbe foyer convivial rempli de belles personnes !

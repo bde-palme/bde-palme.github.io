@@ -2,6 +2,7 @@
 layout: page
 title: L'asso
 permalink: /l-asso/
+exclude: false
 ---
 
 ### Présentation
@@ -12,7 +13,7 @@ Nous sommes la Palme, le BDE des élèves de l'ISTIC. Notre but est de vous fair
 
 ### Qui sommes-nous ?
 
-#### Les boss depuis avril 2023
+#### Le bureau pour l'année 2023/2024
 
   - Alexis Deffains,  président
   - Rémi Loison, vice-président

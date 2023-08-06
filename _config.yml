@@ -2,6 +2,8 @@ title: BDE PALME
 author:
   email: bdepalme@gmail.com
 
+mentions: /mentions-legales/
+
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >

@@ -2,6 +2,9 @@
 layout: page
 title: Nos partenariats
 permalink: /partenariats/
+exclude: false
 ---
 
-En adhérent à l'association, vous pourrez profiter de différents partenariats !
+La PALME s'efforce de vous obtenir différents partenaires ! 
+
+Tous les détails sont notés ici.

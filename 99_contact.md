@@ -2,6 +2,7 @@
 layout: page
 title: Liens utiles
 permalink: /liens/
+exclude: false
 ---
 
 ### Nos réseaux
