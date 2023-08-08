@@ -5,6 +5,8 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col">
+      <a href="{{ site.mentions }}">Mentions</a>
+      <br/><br><br>
       {%- if site.author %}
         <ul class="contact-list">
           {% if site.author.name -%}
@@ -15,7 +17,6 @@
           {%- endif %}
         </ul>
       {%- endif %}
-      <a href="{{ site.mentions }}">Mentions</a>
       </div>
       <div class="footer-col">
         <p>{{ site.description | escape }}</p>
