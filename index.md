@@ -8,4 +8,9 @@
 layout: home
 ---
 
-![logo](data/logo_2324_sf_h.png)
+# Bienvenue !
+
+Vous trouverez sur le site de votre BDE préféré toutes les informations utiles ainsi que nos dernières news !
+
+
+# Nos dernières annonces
