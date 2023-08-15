@@ -8,8 +8,6 @@
 layout: home
 ---
 
-# Bienvenue !
-
 Vous trouverez sur le site de votre BDE préféré toutes les informations utiles ainsi que nos dernières news !
 
 
