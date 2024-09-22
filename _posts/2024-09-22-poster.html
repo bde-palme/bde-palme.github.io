@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concours de poster de l'ISTIC - Art Algorithmique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body,
+        h1 {
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 5vw;
+            background: rgb(243, 254, 255);
+            background: linear-gradient(90deg, rgba(243, 254, 255, 1) 0%, rgba(253, 239, 255, 1) 35%, rgba(238, 254, 255, 1) 61%);
+        }
+
+        #art-algorithmique {
+            font-size: 10vw;
+            max-width: fit-content;
+            font-weight: bold;
+        }
+
+        section {
+            margin: 15vh 0;
+        }
+
+        @media (max-width: 1250px) {
+            #hero {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                align-items: left;
+            }
+
+            #hero img {
+                width: 100%;
+            }
+
+            .google-form {
+                width: 100%;
+                height: 600px;
+            }
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+            }
+
+            .card img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .card .description {
+                padding: 10px;
+                width: 100%;
+            }
+
+            .cards-container {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+        }
+
+        @media (min-width: 1250px) {
+            #hero {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: left;
+            }
+
+            #hero h1 {
+                font-size: 4rem;
+            }
+
+            #hero img {
+                width: 30%;
+            }
+
+            p {
+                max-width: 600px;
+            }
+
+            h2 {
+                max-width: 600px;
+            }
+
+            .google-form {
+                height: 600px;
+                width: 600px;
+            }
+
+            .card {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                max-height: 250px;
+                max-width: 600px;
+            }
+
+            .card img {
+                width: 30%;
+                object-fit: cover;
+            }
+
+            .card .description {
+                padding: 10px;
+                width: 70%;
+            }
+
+            .cards-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+
+        .citation {
+            font-style: italic;
+            padding: 10px;
+        }
+
+
+
+        .link {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            background-color: #e5e7e7;
+            padding: 0 5px 0 5px;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .link svg {
+            width: 35px;
+            height: 35px;
+        }
+
+        .link p {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+
+        }
+
+        #indisponible {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="hero">
+        <div>
+            <h1 id="art-algorithmique">L'ART ALGORITHMIQUE</h1>
+            <p>C'est le thème du <b>concours de poster de l'ISTIC 2024-25</b>. Tu auras deux semaines pour créer un
+                poster à partir d'une image générée par du code, grâce à des techniques de creative coding (pas d'IA).
+                Ça
+                commence le <b>mardi 22 octobre à 18h30, dans l'amphi P</b> !</p>
+        </div>
+        <img src="/assets/img/concours-posters/exemple-poster-istic.jpg" alt="Exemple de poster ISTIC">
+    </section>
+
+
+    <section id="poster">
+        <h2>Le concours</h2>
+        <p class="citation">"L'art algorithmique, également connu sous le nom d'art des
+            algorithmes, est l'art, et plus
+            précisément l'art
+            visuel, dont la conception est générée par un algorithme."</p>
+        <p>- Wikipedia</p>
+        <p><b>Deux semaines pour créer un poster, à partir d'une image générée algorithmiquement, par du code !</b> On
+            t'attend le <b>mardi 22 octobre à 18h30</b> pour le lancement du concours, dans <b>l'amphi P</b>. Les
+            règles
+            précises
+            seront
+            dévoilées, et vous aurez jusqu'au mardi 5 novembre, après les vacances, pour soumettre votre poster.<br><br>
+            Après quoi, un vote aura lieu dans tout l'ISTIC pour élire le plus beau poster, et le gagnant sera mis
+            en vente par la Palme, le BDE de l'ISTIC. Si tu participes au concours, tu pourras gratuitement avoir un
+            poster imprimé pour toi, de ton choix (le tien, ou celui qui aura gagné !), dans la taille que tu
+            souhaites (A4 à A1). C'est un moyen de repartir avec un joli poster pour décorer chez toi, tout en
+            soutenant la Palme.</p>
+    </section>
+
+
+
+    <section id="Exemple">
+        <h2>Ah cool, mais je ne suis vraiment pas capable de faire ça moi...</h2>
+        <p>Laisse-moi te présenter la chaîne la plus cool du monde de l'informatique : The Coding Train ! C'est un gars
+            trop fun qui fait des vidéos où il apprend en même temps que toi à utiliser un algo et à générer des images
+            avec. Voici quelques exemples de trucs super stylés et assez faciles à faire :</p>
+
+        <div class="cards-container">
+            <div class="card">
+                <img src="/assets/img/concours-posters/color_marbling.webp" alt="Image de mélange de couleurs">
+                <div class="description">
+                    <h3>Color marbling</h3>
+                    <p>Une simulation de mélange de couleurs, qui donne des images psychédéliques absolument magnifiques
+                    </p>
+                    <a class="link" href="https://youtu.be/p7IGZTjC008?si=YEUmlcc-6rJVt5O_" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-external-link">
+                            <path d="M15 3h6v6" />
+                            <path d="M10 14 21 3" />
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        </svg>
+                        <p>https://youtu.be/p7IGZTjC008?si=YEUmlcc-6rJVt5O_</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/assets/img/concours-posters/fractal.webp" alt="Image de fractale">
+                <div class="description">
+                    <h3>Fractales</h3>
+                    <p>Un grand classique quand on parle d'objets mathématiques esthétiques, la fractale !</p>
+                    <a class="link" href="https://www.youtube.com/watch?v=MazpwQNdJYQ" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-external-link">
+                            <path d="M15 3h6v6" />
+                            <path d="M10 14 21 3" />
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        </svg>
+                        <p>https://www.youtube.com/watch?v=MazpwQNdJYQ</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/assets/img/concours-posters/perlin-fields.png" alt="Image de champ de Perlin">
+                <div class="description">
+                    <h3>Perlin field</h3>
+                    <p>Un dérivé du bruit de Perlin, utilisé pour guider des petites billes d'encre virtuelles... Une
+                        danse sublime !</p>
+                    <a class="link" href="https://youtu.be/Qf4dIN99e2w?si=m3imVUKH72nLtKzn" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-external-link">
+                            <path d="M15 3h6v6" />
+                            <path d="M10 14 21 3" />
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        </svg>
+                        <p>https://youtu.be/Qf4dIN99e2w?si=m3imVUKH72nLtKzn</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/assets/img/concours-posters/metaballs.webp" alt="Image de métaballs">
+                <div class="description">
+                    <h3>Métaballs</h3>
+                    <p>Des balles floues, qui fusionnent, se repoussent, se fondent...</p>
+                    <a class="link" href="https://youtu.be/ccYLb7cLB1I?si=qd0sfi0Oc53Vr1M9" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-external-link">
+                            <path d="M15 3h6v6" />
+                            <path d="M10 14 21 3" />
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        </svg>
+                        <p>https://youtu.be/ccYLb7cLB1I?si=qd0sfi0Oc53Vr1M9</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="indisponible">
+        <h2>Tu n'es pas dispo ?</h2>
+        <p>Donne-nous ton mail, pour qu'on t'envoie les règles dès le lancement du concours !</p>
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdTuduzXBUT77XIiRQMNa4N8P3PM9WH1Z23mpVBv6y7c7mxzg/viewform?embedded=true"
+            frameborder="0" marginheight="0" marginwidth="0" class="google-form">
+            Chargement…
+        </iframe>
+    </section>
+</body>
+
+</html>
